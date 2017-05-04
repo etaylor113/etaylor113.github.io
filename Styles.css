@@ -11,51 +11,50 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+		display: block;
+	}
 body {
-	line-height: 1;
-}
+		line-height: 1;
+	}
 ol, ul {
-	list-style: none;
-}
+		list-style: none;
+	}
 blockquote, q {
-	quotes: none;
-}
+		quotes: none;
+	}
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
-}
+		content: '';
+		content: none;
+	}
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
 
 
 
 body {
 	line-height: 2;
-}
+	}
 
-		
 
 		[class*="col-"] {
 		    width: 100%;
 		    float: left;
 		    padding: 15px;
-			}
-	@media only screen and (min-width: 768px) {
+	}
+@media only screen and (min-width: 768px) {
 	    .col-1 {width: 8.33%;}
 	    .col-2 {width: 16.66%;}
 	    .col-3 {width: 25%;}
@@ -73,15 +72,16 @@ body {
 			content: "";
 			clear: both;
 			display: block;
-		}
+	}
+
 
 
 		[class*="col-"] {
 		    width: 100%;
 		    float: left;
 		    padding: 15px;
-		}
-	@media only screen and (min-width: 600px) {
+	}
+@media only screen and (min-width: 600px) {
 	    .col-m-1 {width: 8.33%;}
 	    .col-m-2 {width: 16.66%;}
 	    .col-m-3 {width: 25%;}
@@ -94,12 +94,12 @@ body {
 	    .col-m-10 {width: 83.33%;}
 	    .col-m-11 {width: 91.66%;}
 	    .col-m-12 {width: 100%;}
-				}
+	}
 		.row::after {
 		content: "";
 		clear: both;
 		display: block;
-		}
+	}
 	
 
 
@@ -115,6 +115,7 @@ body {
 		font-size: 200%;
 		font-color: black;
 		font-family: serif, serif;
+		margin: 20px;
 	}
 
 	.subjectsEditP1 {
@@ -122,6 +123,7 @@ body {
 		font-size: 150%;
 		font-color: black;
 		font-family: sans-serif, serif;
+		margin: 20px;
 	}
 
 	#nav_1 {
@@ -136,6 +138,7 @@ body {
 		font-size: 150%;
 		font-color: black;
 		font-family: sans-serif, serif;
+		margin: 20px;
 	}
 
 
@@ -144,6 +147,7 @@ body {
 		font-size: 150%;
 		font-color: black;
 		font-family: sans-serif, serif;
+		margin: 20px;
 	}
 
 	.textSizeP4 {
@@ -151,6 +155,7 @@ body {
 		font-size: 150%;
 		font-color: black;
 		font-family: sans-serif, serif;
+		margin: 20px;
 	}
 
 
@@ -164,6 +169,50 @@ body {
 		font-family: sans-serif, serif;
 	}
 
+	.tooltip {
+		position: relative;
+		display: inline-block;
+		border-bottom: none;
+		opacity: 1;
+	}
+
+	.tooltip .tooltiptext {
+	    visibility: hidden;
+	    width: 350px;
+	    background-color: white;
+	    color: black;
+	    border: 2px solid black;
+	    text-align: center;
+	    border-radius: 6px;
+	    padding: 5px;
+	    position: absolute;
+	    z-index: 1;
+	    bottom: -25%;
+	    left: 20%;
+	    margin-left: -60px;
+	    font-size: 150%;
+	    opacity: 0;
+	    transition: opacity 1s;
+	    font-family: sans-serif, serif;
+	}
+
+	.tooltip .tooltiptext::after {
+	    content: "";
+	    position: absolute;
+	    bottom: 100%;
+	    left: 50%; 
+	    margin-top: -5px;
+	    border-width: 20px;
+	    border-style: solid;
+	    border-color: transparent transparent black transparent;  
+	}
+
+
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+	}
+	
 	ul {
 	    list-style-type: none;
 	    margin: 0;
@@ -188,49 +237,3 @@ body {
 	li a:hover {
     	background-color: #111;
 		}
-	
-
-.tooltip {
-	position: relative;
-	display: inline-block;
-	border-bottom: none;
-	opacity: 1;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 350px;
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: -25%;
-    left: 20%;
-    margin-left: -60px;
-    font-size: 150%;
-    opacity: 0;
-    transition: opacity 1s;
-    font-family: sans-serif, serif;
-}
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%; 
-    margin-top: -5px;
-    border-width: 20px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;  
-}
-
-
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-	opacity: 1;
-}
-	
